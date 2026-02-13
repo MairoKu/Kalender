@@ -54,7 +54,6 @@ function showCalendar() {
 
 function isDoubleBooking(date, start, end) {
     let bookings = getBookings();
-
     return bookings.find(b =>
         b.date === date &&
         !(b.end <= start || b.start >= end)
@@ -97,3 +96,4 @@ window.onload = function() {
         showCalendar();
     }
 };
+
