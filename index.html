@@ -6,33 +6,40 @@
 </head>
 <body>
 
-<h1>Ühine broneeringute kalender</h1>
+<div>
+    <h1>Ühine broneeringute kalender</h1>
 
-<div id="loginSection">
-    <h2>Logi sisse</h2>
-    <input type="text" id="username" placeholder="Kasutajanimi">
-    <input type="password" id="password" placeholder="Parool">
-    <button onclick="login()">Logi sisse</button>
-    <button onclick="register()">Registreeri</button>
-</div>
+    <div class="container">
 
-<div id="calendarSection" style="display:none;">
-    <h2>Broneeringud</h2>
+        <div id="loginSection">
+            <h2>Logi sisse</h2>
+            <input type="text" id="username" placeholder="Kasutajanimi">
+            <input type="password" id="password" placeholder="Parool">
+            <button onclick="login()">Logi sisse</button>
+            <button onclick="register()">Registreeri</button>
+        </div>
 
-    <input type="date" id="date">
-    <input type="time" id="start">
-    <input type="time" id="end">
-    <input type="text" id="title" placeholder="Kirjeldus">
-    <button onclick="addBooking()">Lisa broneering</button>
-    <button onclick="logout()">Logi välja</button>
+        <div id="calendarSection" style="display:none;">
+            <h2>Broneeringud</h2>
 
-    <h3>Olemasolevad broneeringud:</h3>
-    <ul id="bookingList"></ul>
+            <input type="date" id="date">
+            <input type="time" id="start">
+            <input type="time" id="end">
+            <input type="text" id="title" placeholder="Kirjeldus">
+            <button onclick="addBooking()">Lisa broneering</button>
+            <button onclick="logout()">Logi välja</button>
+
+            <h3>Olemasolevad broneeringud:</h3>
+            <ul id="bookingList"></ul>
+        </div>
+
+    </div>
 </div>
 
 <script src="./script.js"></script>
 
-
 </body>
+
 </html>
+
 
